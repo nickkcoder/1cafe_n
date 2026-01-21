@@ -1,0 +1,16 @@
+/* Full-site background image for the entire page */
+body {
+  /* overlay for green + white Y2K vibe */
+  background:
+    linear-gradient(rgba(50,168,82,0.4), rgba(0,0,0,0.2)),
+    url('/assets/wallpaperhome.jpg') no-repeat center center fixed;
+
+  /* make sure image covers entire page */
+  background-size: cover;
+
+  font-family: 'VT323', monospace;
+  color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

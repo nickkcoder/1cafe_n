@@ -1,0 +1,38 @@
+/* --- HEADER --- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(90deg, var(--green-dark), var(--green));
+  box-shadow: 0 0 25px var(--green-light);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header .logo h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, var(--green-light), var(--white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px var(--green-light), 0 0 20px var(--white);
+  cursor: default;
+}
+
+.site-header .nav a {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  margin-left: 25px;
+  color: var(--white);
+  text-decoration: none;
+  text-shadow: 0 0 5px var(--white);
+  transition: 0.3s;
+}
+
+.site-header .nav a:hover {
+  color: var(--green-light);
+  text-shadow: 0 0 12px var(--green-light), 0 0 20px var(--white);
+  transform: scale(1.1);
+}

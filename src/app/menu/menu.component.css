@@ -1,0 +1,106 @@
+/* --- PAGE SETUP --- */
+.menu-page {
+  font-family: 'VT323', monospace;
+  color: var(--white);
+  background: linear-gradient(rgba(92,153,32,0.1), rgba(46,95,18,0.2));
+  padding-bottom: 80px;
+}
+
+/* --- HERO SECTION --- */
+.menu-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, var(--green-dark), var(--green));
+}
+
+.menu-hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5rem;
+  background: linear-gradient(45deg, #5C9920, #EDEDE1); /* more contrast */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px #5C9920, 0 0 12px #EDEDE1; /* glow for visibility */
+}
+
+
+.menu-hero p {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: var(--white);
+  text-shadow: 0 0 5px var(--white);
+}
+
+/* --- SECTION TITLES --- */
+.menu-section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.menu-section h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.2rem;
+  margin-bottom: 40px;
+  background: linear-gradient(45deg, #5C9920, #EDEDE1); /* more contrast */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px #5C9920, 0 0 12px #EDEDE1; /* glow */
+}
+
+
+/* --- CARDS --- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
+  justify-content: center;
+  gap: 60px;
+}
+
+.card {
+  width: 220px;
+  background: linear-gradient(145deg, #2E5F12, #3A6F1A);
+  border: 2px solid #5C9920;
+  border-radius: 18px;
+  padding: 15px;
+  transition: 0.35s ease;
+  box-shadow: 0 0 18px rgba(92,153,32,0.35);
+  text-align: center;
+}
+
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #5C9920;
+  margin-bottom: 10px;
+}
+
+
+.card:hover {
+  transform: rotate(-2deg) scale(1.06);
+  box-shadow: 0 0 40px var(--green-light);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin: 6px 0;
+}
+
+.card p {
+  font-size: 1rem;
+  margin: 4px 0;
+}
+
+.card .price {
+  margin-top: 6px;
+  font-size: 1.1rem;
+}
+
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 768px) {
+  .menu-hero h1 { font-size: 4rem; }
+  .menu-section h2 { font-size: 2.5rem; }
+  .cards { gap: 25px; }
+}

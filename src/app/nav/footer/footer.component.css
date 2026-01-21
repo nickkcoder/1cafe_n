@@ -1,0 +1,31 @@
+/* --- FOOTER --- */
+.site-footer {
+  background: linear-gradient(90deg, var(--green-light), var(--green-dark));
+  color: var(--white);
+  padding: 40px 50px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  box-shadow: 0 -5px 25px var(--green-light);
+}
+
+.site-footer .footer-content p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px var(--white), 0 0 10px var(--green-light);
+}
+
+.site-footer .socials a {
+  margin: 0 10px;
+  font-size: 1.1rem;
+  color: var(--white);
+  text-decoration: none;
+  text-shadow: 0 0 5px var(--white);
+  transition: 0.3s;
+}
+
+.site-footer .socials a:hover {
+  color: var(--green-light);
+  text-shadow: 0 0 12px var(--green-light), 0 0 20px var(--white);
+  transform: scale(1.2);
+}
